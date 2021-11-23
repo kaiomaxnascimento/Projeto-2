@@ -10,7 +10,6 @@ function ValidateField(field) {
         }
         return foundError
     }
-    console.log(field.validity)
 
     function customMessage(typeError) {
         const messages = {
