@@ -1,0 +1,163 @@
+* {
+    padding: 0rem;
+    font: normal 1.7rem Arial;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(255, 127, 104);
+
+}
+
+main {
+    padding-top: 5%;
+    max-width: 98rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    grid-gap: 3rem;
+}
+
+
+.premium {
+    background-color: rgb(89, 51, 194);
+    grid-row: 1;
+    grid-column: 2;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.151);
+}
+
+.premium a {
+    color: white;
+    font-weight: bold;
+}
+
+.title {
+    color: white;
+    grid-row: 2 / 3;
+}
+
+.title h1 {
+    font: bolder 4.5rem Arial;
+    padding-top: 6.0rem;
+}
+
+.title p {
+    line-height: 2.5rem;
+}
+
+.register {
+    background-color: white;
+    padding: 2.0rem;
+    text-align: center;
+    border-radius: 1rem;
+    grid-column: 2;
+    grid-row: 2 / 3;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.151);
+}
+
+.register input {
+    outline: none;
+    width: 99%;
+    max-width: 90%;
+    padding: 15px 10px 15px 30px;
+    border-radius: 0.5rem;
+    border: solid 1px rgba(0, 0, 0, 0.24);
+    font: bold 1.5rem Arial;
+}
+
+.name:focus, .lastname:focus, .email:focus, .pass:focus {
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.register div {
+    margin: 20px 0px;
+}
+
+.register .but {
+    background-color: rgb(2, 211, 141);
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 3px 0px rgba(1, 122, 62, 0.603);
+    appearance: none;
+}
+
+.register .term {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.322);
+}
+
+.register p a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(211, 58, 2);
+}
+
+.input span.error.active {
+    display: flex;
+    padding: 0px;
+    margin: 1px auto;
+    border: 1px solid red;
+    padding: 0.5rem;
+    color: rgba(0, 0, 0, 0.712);
+    font-weight: bold;
+    max-width: 90%;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title h1 {
+        padding: 0rem;
+    }
+
+    .register input {
+        width: 80%;
+    }
+
+    .input span.error.active {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    .register .but {
+        padding: 15px 10px 15px 10px;
+        font-size: 1.3rem;
+    }
+
+    .premium {
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .title h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .title h1 {
+        font-size: 3rem;
+    }
+}
