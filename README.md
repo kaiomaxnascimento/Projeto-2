@@ -1,2 +1,2 @@
 # Projeto-2
- Validação de formulário
+ Validação de formulário com JS
